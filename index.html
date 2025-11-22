@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Overview - JPEG & JPEG-2000 COMPS</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  </head>
+
+  <body class="size-1280 slide-to-right">
+    <a href="index.html">
+    </a>
+    <nav class="slide-nav aside-nav">
+      <ul>
+        <li><a href="index.html">Project Overview</a></li>
+        <li><a href="code.html">CodeBase</a></li>
+        <li><a href="posters.html">Our Posters</a></li>
+        <li><a href="paper.html">Our Paper</a></li>
+        <li><a href="acknowledgement.html">Acknowledgement</a></li>
+      </ul>
+    </nav>
+
+    <div class="slide-content">
+      <section id="right-content" class="s-12 m-10 l-8 xl-7 xxl-6 right">
+        <div class="line">
+          <h1>Project Overview</h1>
+
+          <p class="perex">
+            This site documents our COMPS project on compressing multispectral satellite images
+            using JPEG and JPEG-2000.
+          </p>
+
+          <h2>What this project is about</h2>
+          <p>
+            This project compares how two image compression standards, JPEG and JPEG 2000,
+            perform on multispectral satellite imagery. We implemented our own JPEG
+            pipeline (color conversion, DCT, quantization, entropy coding) and a JPEG 2000
+            pipeline (wavelet transform, quantization, block coding), then evaluated
+            their quality, bitrate, and runtime.
+          </p>
+          
+          <h2>Dataset</h2>
+          <p>
+            We use a small set of multispectral satellite GeoTIFFs from the USGS
+            <em>Earth as Art</em> collection. Each image is converted to an RGB view and
+            then compressed and reconstructed with both JPEG and JPEG 2000 so we can
+            compare quality and storage cost on the same settings.
+          </p>
+          
+
+          <h2>Explore the project</h2>
+          <ul>
+            <li><a href="code.html">CodeBase</a> - how the pipeline and experiments are implemented.</li>
+            <li><a href="paper.html">Paper</a> - a formal write-up of the methods and results.</li>
+            <li><a href="posters.html">Posters</a> - conference and department poster designs.</li>
+          </ul>
+          
+          <a class="more-button blue-more-button" href="code.html">View the CodeBase</a>
+        </div>
+      </section>
+    </div>
+      <!-- BACKGROUND CAROUSEL -->
+      <div id="background-carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item" style="background-image: url(img/gallery/photo-14.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-15.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-16.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-11.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-12.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-13.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-18.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-1.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-2.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-3.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-4.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-5.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-6.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-7.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-8.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-9.jpg)"></div>
+          <div class="item" style="background-image: url(img/gallery/photo-10.jpg)"></div>
+        </div>
+      </div>
+    
+
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        var owl = $('#background-carousel .owl-carousel');
+        owl.owlCarousel({
+          nav: false,
+          dots: false,
+          items: 1,
+          loop: true,
+          animateOut: 'fadeOut',
+          autoplay: true,
+          autoplayTimeout: 4000
+        });
+      });
+    </script>
+  </body>
+</html>
